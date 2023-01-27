@@ -10,7 +10,19 @@ public class IndiceTeste {
         System.out.println("---------------------------");
 
         CalculoIndice calculoIndice = new CalculoIndice();
-        System.out.println(calculoIndice.calcularIndice(new Indice(1.32165487, 4.12324569)));
+        Double respCI = calculoIndice.calcularIndice(new Indice(46.11947434, 	53.56438479));
+        System.out.println(respCI);
+        System.out.println("---------------------------");
+
+        ValorObjeto objeto = new ValorObjeto();
+        Double respO = objeto.objetoInicial(100);
+        System.out.println(respO);
+        System.out.println("---------------------------");
+
+        CorrecaoMonetaria cm = new CorrecaoMonetaria();
+        Double respCM = cm.calcularCorrecaoMonetaria(respCI, respO);
+        System.out.println(respCM);
+
 
 
     }

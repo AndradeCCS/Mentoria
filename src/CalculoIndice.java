@@ -4,5 +4,4 @@ public class CalculoIndice {
         return this.indice = indice.getIndiceFinal()/ indice.getIndiceInicial() -1;
     }
 
-
 }
